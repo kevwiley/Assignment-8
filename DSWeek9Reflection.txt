@@ -1,0 +1,10 @@
+﻿Kevin Wiley
+
+
+A hash table is the right structure for fast lookup due to the ability to sort items by their hash functions. The hash function is used to take data like a key and put it into an array, where it can be immediately accessed since the hash function is pointing directly to it. This means that all of these operations are performed quickly and doesn’t require them to search through something like a massive list.
+
+
+In my program I used chaining to deal with collisions. This creates a linked list at the indexes, and if something is a duplicate, it is added to the linked list. This means that two things belong to index 5, my code’s output would be something like Index 5: Amy - 111-222-3333 Index 5: May - 222-333-1111. Both contacts in this case are at index five, but it doesn’t cause any problems due to the linked list.
+
+
+An engineer may choose a hash table over a list or tree when there is a large amount of data, with specific data needing to be accessed quickly. For example, if a list or tree is going to end up containing thousands of items, or have any type of operation performed on it, it is going to take a very long time. A hash table doesn’t take long, and works the same regardless of size.
